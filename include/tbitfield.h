@@ -9,6 +9,7 @@
 #define __BITFIELD_H__
 
 #include <iostream>
+#include <bitset>
 
 using namespace std;
 
@@ -31,6 +32,7 @@ public:
 
   // доступ к битам
   int GetLength(void) const;      // получить длину (к-во битов)           (#О)
+  int GetMemLen() const;
   void SetBit(const int n);       // установить бит                       (#О4)
   void ClrBit(const int n);       // очистить бит                         (#П2)
   int  GetBit(const int n) const; // получить значение бита               (#Л1)

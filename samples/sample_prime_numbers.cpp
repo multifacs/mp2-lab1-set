@@ -6,9 +6,12 @@
 // Тестирование битового поля и множества
 
 #include <iomanip>
+#include "tset.h"
 
 // #define USE_SET // Использовать класс TSet,
                 // закоментировать, чтобы использовать битовое поле
+
+/*
 
 #ifndef USE_SET // Использовать класс TBitField
 
@@ -91,4 +94,18 @@ int main()
   cout << "В первых " << n << " числах " << count << " простых" << endl;
 }
 
-#endif
+#endif*/
+
+int main()
+{
+    TBitField a(16);
+
+    cin >> a;
+    cout << a << endl;
+
+
+    TSet m(10);
+
+    cin >> m;
+    cout << m << endl;
+}
