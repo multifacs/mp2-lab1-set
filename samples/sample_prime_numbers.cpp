@@ -98,7 +98,7 @@ int main()
 
 int main()
 {
-    TBitField a(16);
+    /*TBitField a(16);
 
     cin >> a;
     cout << a << endl;
@@ -107,5 +107,19 @@ int main()
     TSet m(10);
 
     cin >> m;
-    cout << m << endl;
+    cout << m << endl;*/
+
+    const int size1 = 5, size2 = 7;
+    TSet set1(size1), set2(size2), set3(size1);
+    // set1 = {1, 2, 4}
+    set1.InsElem(1);
+    set1.InsElem(2);
+    set1.InsElem(4);
+    // set2 = {0, 1, 2}
+    set2.InsElem(0);
+    set2.InsElem(1);
+    set2.InsElem(2);
+    set3 = set1 + set2;
+
+    cout << set3;
 }
